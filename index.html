@@ -10,6 +10,7 @@
   </head>
 
   <body>
+    <div id="particles-js"></div>
     <header>
       <h1><center>Hi, it's Tim's tiny website!
         <div style="height: 15px"></div>
@@ -70,5 +71,31 @@ Instagram account where we post a lot of French contents based on data!
     <footer>
       <p>&copy; 2026 My very simple Website</p>
     </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+<script>
+  particlesJS("particles-js", {
+    particles: {
+      number: { value: 80 },
+      color: { value: "#e5eb25" },
+      shape: { type: "circle" },
+      opacity: { value: 0.7 },
+      size: { value: 3 },
+      line_linked: {
+        enable: true,
+        color: "#2563eb",
+        opacity: 0.5
+      },
+      move: { enable: true, speed: 1.5 }
+    },
+    interactivity: {
+      events: {
+        onhover: { enable: true, mode: "repulse" }
+      }
+    }
+  });
+</script>
+
   </body>
 </html>
